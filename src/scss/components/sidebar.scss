@@ -1,0 +1,29 @@
+.sidebar {
+    min-height: calc(100vh - 128px);
+    width: max-content;
+    background-color: $primary;
+    display: flex;
+
+    &__list {
+        list-style: none;
+
+    }
+
+    &__item {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        &-text {
+            flex-grow: 1;
+            white-space: nowrap;
+            margin-left: 10px;
+            display: none;
+            transition: all ease-in-out;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
