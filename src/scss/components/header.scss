@@ -1,0 +1,53 @@
+.header {
+    background-color: $primary;
+    z-index: 1;
+
+    &__brand {
+        &-name {
+            font-size: 1.5rem;
+            margin-right: 100px;
+            display: none;
+        }
+
+        &-icon {
+            display: flex;
+            font-size: 2.5rem;
+        }
+    }
+
+    &__toggler {
+        border: none;
+        display: none;
+
+        &:focus {
+            box-shadow: none;
+            border: none;
+        }
+    }
+
+    &__navbar-brand {
+        display: flex;
+    }
+
+    &__nav-item {
+        display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+
+        &__navbar-brand,
+        &__brand-icon {
+            display: none;
+        }
+
+        &__nav-item,
+        &__toggler {
+            display: flex;
+        }
+
+    }
+}
+
+.app-main {
+    min-height: 100vh;
+}
