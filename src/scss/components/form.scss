@@ -1,0 +1,15 @@
+.form{
+    &__label{
+        &_required{
+            position: relative;
+        &:after{
+            content:" *";
+    color: $danger;
+        }
+        }
+        
+    }
+    &__addmore{
+        cursor:pointer;
+    }
+}
