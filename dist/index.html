@@ -1,66 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>AISME DOTNET APP</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
 
-  <body id="body-pd">
-    <header class="header" id="header">
-      <div class="header_toggle"><i class="bx bx-menu" id="header-toggle"></i></div>
-     <div class="d-flex align-items-center">
-        <div class="header_img">
-          <img
-          
-            src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-          />
-        </div>
-        <div class="dropdown">
-          <button class="btn btn-text dropdown-toggle shadow-0 shadow-none" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-            User
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <li><button class="dropdown-item" type="button">Profile</button></li>
-            <li><button class="dropdown-item" type="button">Another action</button></li>
-            <li><button class="dropdown-item" type="button">Something else here</button></li>
-          </ul>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>AISME DOTNET APP</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <link rel="stylesheet" href="../dist/css/main.css" />
+</head>
+
+<body id="body-pd">
+  <header class="header" id="header">
+    <div class="header_toggle"><i class="bx bx-menu" id="header-toggle"></i></div>
+    <div class="d-flex align-items-center">
+      <div class="header_img">
+        <img
+          src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="" />
+      </div>
+      <div class="dropdown">
+        <button class="btn btn-text dropdown-toggle shadow-0 shadow-none" type="button" id="dropdownMenu2"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          User
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <li><button class="dropdown-item" type="button">Profile</button></li>
+          <li><button class="dropdown-item" type="button">Another action</button></li>
+          <li><button class="dropdown-item" type="button">Something else here</button></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="l-navbar" id="nav-bar">
+    <nav class="nav">
+      <div class="w-100">
+        <a href="#" class="nav_logo">
+          <i class="bx bx-layer nav_logo-icon"></i> <span class="nav_logo-name">AISME Labs anand</span>
+        </a>
+        <div class="nav_list">
+          <a href="#" class="nav_link align-items-start d-flex"> <i class="bx bx-user nav_icon"></i>
+            <div class="accordion w-100" id="sidebarAccordian">
+              <div class="accordion-item border-0 shadow-0">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed p-0 bg-white text-dark border-0 shadow-0" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    Admin
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body px-0">
+                    <ul class="m-0 p-0 list-unstyled">
+                      <li class="accordion__item">Client Management</li>
+                      <li class="accordion__item">Category Management</li>
+                      <li class="accordion__item">Users Management</li>
+                      <li class="accordion__item">User group Management</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="./layout.html" class="nav_link">
+            <i class="bx bx-message-square-detail nav_icon"></i> <span class="nav_name">Layout Config</span>
+          </a>
+          <a href="./compose.html" class="nav_link">
+            <i class="bx bxs-component nav_icon"></i> <span class="nav_name">Compose</span>
+          </a>
+          <a href="#" class="nav_link"> <i class="bx bx-upload nav_icon"></i> <span class="nav_name">Upload</span> </a>
         </div>
       </div>
-    </header>
-    <div class="l-navbar" id="nav-bar">
-      <nav class="nav">
-        <div>
-          <a href="#" class="nav_logo">
-            <i class="bx bx-layer nav_logo-icon"></i> <span class="nav_logo-name">AISME Labs</span>
-          </a>
-          <div class="nav_list">
-            <a href="#" class="nav_link"> <i class="bx bx-user nav_icon"></i> <span class="nav_name">Admin</span> </a>
-            <a href="./layout.html" class="nav_link">
-              <i class="bx bx-message-square-detail nav_icon"></i> <span class="nav_name">Layout Config</span>
-            </a>
-            <a href="#" class="nav_link">
-              <i class="bx bxs-component nav_icon"></i> <span class="nav_name">Compose</span>
-            </a>
-            <a href="#" class="nav_link"> <i class="bx bx-upload nav_icon"></i> <span class="nav_name">Upload</span> </a>
-          </div>
-        </div>
-        <a href="#" class="nav_link"> <i class="bx bx-log-out nav_icon"></i> <span class="nav_name">SignOut</span> </a>
-      </nav>
-    </div>
-    <!--Container Main start-->
-    <div class="main">
-      <p class="text-center">Welcome User</p>
-        
-    </div>
-    </div>
-    <!--Container Main end-->
+      <a href="#" class="nav_link"> <i class="bx bx-log-out nav_icon"></i> <span class="nav_name">SignOut</span>
+      </a>
+    </nav>
+  </div>
+  <!--Container Main start-->
+  <div class="main">
+    <p class="text-center">Welcome User</p>
 
-    <!-- bootstrap js -->
-    <script src="./js/main.js"></script>
-  </body>
+  </div>
+  </div>
+  <!--Container Main end-->
+
+  <!-- bootstrap js -->
+  <script src="../dist/js/main.js"></script>
+</body>
+
 </html>
