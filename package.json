@@ -1,6 +1,6 @@
 {
   "name": "aisme-donet-app",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "UI for the AISME Application",
   "main": "index.js",
   "scripts": {
