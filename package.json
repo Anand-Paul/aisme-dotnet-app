@@ -21,6 +21,7 @@
     "css-loader": "^6.7.1",
     "dotenv-webpack": "^7.1.0",
     "fast-glob": "^3.2.11",
+    "html-webpack-plugin": "^5.5.0",
     "mime-types": "^2.1.35",
     "mini-css-extract-plugin": "^2.6.0",
     "path": "^0.12.7",
@@ -38,6 +39,7 @@
     "webpack-dev-server": "^4.9.2"
   },
   "dependencies": {
-    "bootstrap-icons": "^1.8.3"
+    "bootstrap-icons": "^1.8.3",
+    "fs": "^0.0.1-security"
   }
 }
