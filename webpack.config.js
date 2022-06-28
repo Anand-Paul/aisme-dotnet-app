@@ -3,25 +3,6 @@ const Dotenv = require("dotenv-webpack");
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const fs = require("fs");
-
-let htmlPageNames = [];
-const pages = fs.readdirSync("./src");
-pages.forEach(page => {
-  if (page.endsWith(".html")) {
-    htmlPageNames.push(page.split(".html")[0]);
-  }
-});
-
-let multipleHtmlPlugins = htmlPageNames.map(name => {
-  return new HtmlWebpackPlugin({
-    template: `./src/${name}.html`, // relative path to the HTML files
-    filename: `${name}.html`, // output HTML files
-    chunks: [`${name}`], // respective JS files
-    env: process.env.NODE_ENV
-  });
-});
 
 module.exports = {
   // Define the entry points of our application (can be multiple for different sections of a website)
@@ -100,11 +81,10 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "css/[name].css",
       chunkFilename: "[id].css"
-    })
-    // new HtmlWebpackPlugin()
+    }),
     // Copy html files from src to dist
-    // new CopyPlugin({
-    //   patterns: [{ from: "*.html", to: path.resolve(__dirname, "./dist"), context: "src" }]
-    // })
-  ].concat(multipleHtmlPlugins)
+    new CopyPlugin({
+      patterns: [{ from: "*.html", to: path.resolve(__dirname, "./dist"), context: "src" }]
+    })
+  ]
 };
