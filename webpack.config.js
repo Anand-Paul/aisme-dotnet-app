@@ -20,11 +20,15 @@ module.exports = {
   devtool: "source-map",
 
   // Define development server
-  devServer: {
-    static: "./dist",
-    hot: true,
-    client: false
-  },
+  // devServer: {
+  //   static: "./dist",
+  //   hot: true,
+  //   client: false
+  // },
+  // resolve: {
+  //   extensions: [".js"]
+  // },
+
   // Define loaders
   module: {
     rules: [
